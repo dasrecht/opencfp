@@ -59,15 +59,15 @@ function deleteTalk(tid) {
         </div>
     </div>
 
-    <h2 class="headline">My Talks</h2>
+    <h2 class="headline">Eingereichte Talks</h2>
     {% if profile.talks is not empty %}
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>Talk Name</th>
-                <th>Type</th>
-                <th>Category</th>
-                <th>Created On</th>
+                <th>Typ</th>
+                <th>Kategorie</th>
+                <th>Erstellt am</th>
                 <th>&nbsp;</th>
                 <th>&nbsp;</th>
             </tr>
@@ -80,17 +80,17 @@ function deleteTalk(tid) {
                 <td>{{ talkHelper.getCategoryDisplayName(talk.category) }}</td>
                 <td>{{ talk.created_at|date("F jS \\a\\t g:ia T") }}</td>
                 {% if cfp_open %}
-                    <td><a href="{{ url('talk_edit', { id: talk.id }) }}">Edit</a></td>
+                    <td><a href="{{ url('talk_edit', { id: talk.id }) }}">Bearbeiten</a></td>
                 {% else %}
-                    <td><a href="{{ url('talk_view', { id: talk.id }) }}">View</a></td>
+                    <td><a href="{{ url('talk_view', { id: talk.id }) }}">Anzeigen</a></td>
                 {% endif %}
-                <td><a href="#" onClick="deleteTalk('{{ talk.id }}');return false;">Delete</a></td>
+                <td><a href="#" onClick="deleteTalk('{{ talk.id }}');return false;">Löschen</a></td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
     {% else %}
-        You currently have no talks submitted.
+        Bisher wurden keine Talks eingereicht.
     {% endif %}
-    <p><a class="btn btn-success" href="{{ url('talk_new') }}">Talk eingeben</a></p>
+    <p><a class="btn btn-success" href="{{ url('talk_new') }}">Talk einreichen</a></p>
 {% endblock %}
