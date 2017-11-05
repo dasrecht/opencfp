@@ -3,13 +3,13 @@
         <input name="id" type="hidden" value="{{ id }}">
     {% endif %}
     <div class="form-group">
-        <label for="form-talk-title" class="col-sm-2 control-label">Talk Title</label>
+        <label for="form-talk-title" class="col-sm-2 control-label">Titel</label>
         <div class="col-sm-10">
             <input id="form-talk-title" type="text" name="title" class="form-control" placeholder="Talk Title" value="{{ title }}" maxlength="100">
         </div>
     </div>
     <div class="form-group">
-        <label for="form-talk-description" class="col-sm-2 control-label">Description/Abstract</label>
+        <label for="form-talk-description" class="col-sm-2 control-label">Beschreibung/Abstract</label>
         <div class="col-sm-10">
             <textarea id="form-talk-description" name="description" class="form-control" placeholder="Give a description of your talk (Abstract)" rows="10">{{ description }}</textarea>
             <p class="help-block">Speaker abstract can be written using <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a> to support links</p>
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="form-talk-type" class="col-sm-2 control-label">Talk Type</label>
+        <label for="form-talk-type" class="col-sm-2 control-label">Talk Typ</label>
         <div class="col-sm-10">
             <select id="form-talk-type" name="type" class="form-control">
                 {% for typeKey, displayType in talkTypes %}
@@ -33,7 +33,7 @@
     </div>
 
     <div class="form-group">
-        <label for="form-talk-category" class="col-sm-2 control-label">Talk Category</label>
+        <label for="form-talk-category" class="col-sm-2 control-label">Kategorie</label>
         <div class="col-sm-10">
             <select id="form-talk-category" name="category" class="form-control">
                {% for categoryKey, displayCategory in talkCategories %}
@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="form-talk-other" class="col-sm-2 control-label">Additional Talk Information</label>
+        <label for="form-talk-other" class="col-sm-2 control-label">Zusätzliche Informationen</label>
         <div class="col-sm-10">
             <textarea id="form-talk-other" name="other" class="form-control" placeholder="Other Considerations, such as Joind.In, Lanyrd, local user group, etc." rows="10">{{ other }}</textarea>
             <p class="help-block">Talk additional information can be written using <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a> to support links</p>
@@ -70,7 +70,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="form-desired" class="col-sm-2 control-label">Most Desired</label>
+        <label for="form-desired" class="col-sm-2 control-label">Bevorzugter Talk</label>
         <div class="col-sm-10">
             <div class="checkbox">
                 <label for="form-desired">
