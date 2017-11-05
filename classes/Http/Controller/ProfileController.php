@@ -56,7 +56,7 @@ class ProfileController extends BaseController
             'hotel' => $speaker_data['hotel'],
             'id' => $user->getId(),
             'formAction' => $this->url('user_update'),
-            'buttonInfo' => 'Update Profile',
+            'buttonInfo' => 'Profil aktualisieren',
         ];
 
         return $this->render('user/edit.twig', $form_data) ;
@@ -170,7 +170,7 @@ class ProfileController extends BaseController
         }
 
         $form_data['formAction'] = $this->url('user_update');
-        $form_data['buttonInfo'] = 'Update Profile';
+        $form_data['buttonInfo'] = 'Profil aktualisieren';
         $form_data['id'] = $user->id;
         $form_data['user'] = $user;
         $form_data['flash'] = $this->getFlash($this->app);

@@ -176,7 +176,7 @@ class TalkController extends BaseController
             'slides' => $talk_info['slides'],
             'other' => $talk_info['other'],
             'sponsor' => $talk_info['sponsor'],
-            'buttonInfo' => 'Update my talk!',
+            'buttonInfo' => 'Talk aktualisieren',
         ];
 
         return $this->render('talk/edit.twig', $data);
@@ -442,7 +442,7 @@ class TalkController extends BaseController
             'slides' => $req->get('slides'),
             'other' => $req->get('other'),
             'sponsor' => $req->get('sponsor'),
-            'buttonInfo' => 'Update my talk!',
+            'buttonInfo' => 'Talk aktualisieren',
         ];
 
         $this->service('session')->set('flash', [

@@ -157,7 +157,7 @@ class SignupControllerTest extends \PHPUnit\Framework\TestCase
             'speaker_bio' => null,
             'transportation' => null,
             'hotel' => null,
-            'buttonInfo' => 'Create my speaker profile',
+            'buttonInfo' => 'Speaker-Account erstellen',
             'agree_coc' => null,
         ];
 
@@ -246,7 +246,7 @@ class SignupControllerTest extends \PHPUnit\Framework\TestCase
             'speaker_bio' => null,
             'transportation' => null,
             'hotel' => null,
-            'buttonInfo' => 'Create my speaker profile',
+            'buttonInfo' => 'Speaker-Account erstellen',
             'agree_coc' => null,
         ];
 
@@ -332,7 +332,7 @@ class SignupControllerTest extends \PHPUnit\Framework\TestCase
             'speaker_bio' => null,
             'transportation' => null,
             'hotel' => null,
-            'buttonInfo' => 'Create my speaker profile',
+            'buttonInfo' => 'Speaker-Account erstellen',
             'agree_coc' => 'agreed',
         ];
 

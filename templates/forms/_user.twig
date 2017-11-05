@@ -23,13 +23,13 @@
         </div>
     {% endif %}
     <div class="form-group">
-        <label for="form-user-first-name" class="col-sm-2 control-label">First Name</label>
+        <label for="form-user-first-name" class="col-sm-2 control-label">Vorname</label>
         <div class="col-sm-10">
             <input id="form-user-first-name" type="text" name="first_name" class="form-control" placeholder="First Name" value="{{ first_name | default('') }}">
         </div>
     </div>
     <div class="form-group">
-        <label for="form-user-last-name" class="col-sm-2 control-label">Last Name</label>
+        <label for="form-user-last-name" class="col-sm-2 control-label">Nachname</label>
         <div class="col-sm-10">
             <input id="form-user-last-name" type="text" name="last_name" class="form-control" placeholder="Last Name" value="{{ last_name | default('') }}">
         </div>
@@ -68,7 +68,7 @@
     </div>
     {% endif %}
     <div class="form-group">
-        <label for="form-user-notes" class="col-sm-2 control-label">Additional Notes</label>
+        <label for="form-user-notes" class="col-sm-2 control-label">Zusätzliche Informationen</label>
         <div class="col-sm-10">
             <textarea id="form-user-notes" name="speaker_info" class="form-control" placeholder="Other information you feel the organizers should be aware of" rows="5">{{ speaker_info | default('') }}</textarea>
             <p class="help-block">Speaker notes can be written using <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a> to support links</p>

@@ -43,7 +43,7 @@ class SignupController extends BaseController
             'transportation' => 0,
             'hotel' => 0,
             'formAction' => $this->url('user_create'),
-            'buttonInfo' => 'Create my speaker profile',
+            'buttonInfo' => 'Speaker-Account erstellen',
             'coc_link' => $this->app->config('application.coc_link'),
         ]);
     }
@@ -62,7 +62,7 @@ class SignupController extends BaseController
             'password2' => $req->get('password2'),
             'airport' => $req->get('airport'),
             'agree_coc' => $req->get('agree_coc'),
-            'buttonInfo' => 'Create my speaker profile',
+            'buttonInfo' => 'Speaker-Account erstellen',
             'coc_link' => $app->config('application.coc_link'),
         ];
         $form_data['speaker_info'] = $req->get('speaker_info') ?: null;
