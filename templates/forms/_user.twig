@@ -56,7 +56,7 @@
         <label for="form-user-bio" class="col-sm-2 control-label">Speaker Bio</label>
         <div class="col-sm-10">
             <textarea id="form-user-bio" name="speaker_bio" class="form-control" placeholder="Information About You" rows="5">{{ speaker_bio | default('') }}</textarea>
-            <p class="help-block">Speaker bio can be written using <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a> to support links</p>
+            <p class="help-block">Speaker Bio untersützt <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a>.</p>
         </div>
     </div>
     {% if site.online_conference == false %}
@@ -71,7 +71,7 @@
         <label for="form-user-notes" class="col-sm-2 control-label">Zusätzliche Informationen</label>
         <div class="col-sm-10">
             <textarea id="form-user-notes" name="speaker_info" class="form-control" placeholder="Other information you feel the organizers should be aware of" rows="5">{{ speaker_info | default('') }}</textarea>
-            <p class="help-block">Speaker notes can be written using <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a> to support links</p>
+            <p class="help-block">Notizen können in <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a> verfasst werden.</p>
         </div>
     </div>
     {% if site.online_conference  == false %}
@@ -100,7 +100,7 @@
         <label for="form-user-photo" class="col-sm-2 control-label">Photo</label>
         <div class="col-sm-10">
             <input type="file" id="form-user-photo" name="speaker_photo" class="form-control" placeholder="Photo at least 300px wide by 300px high" accept="image/jpg, image/jpeg, image/png">
-            <p class="help-block">Photo should be square, and must be at least 300px wide by 300px high. JPG and PNG are the only accepted formats.</p>
+            <p class="help-block">Das Foto sollte quadratich sein und mindestens 300x300 Pixel. JPG und PNG sind die akzeptierten Dateiformat.</p>
             {% if preview_photo is defined and preview_photo is not empty %}
                 <img src="{{ preview_photo }}" class="profile-photo">
             {% endif %}
