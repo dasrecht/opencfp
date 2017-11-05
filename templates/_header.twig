@@ -6,7 +6,7 @@
                 <div class="col-md-9">
                     {% if cfp_open %}
                         <h1 class="headline headline-alpha">Call For Papers ist offen!</h1>
-                        <h3 class="headline headline-alpha">Eingabe von Talks offen bis {{ site.enddate | date(site.date_format) }}</h3>
+                        <h3 class="headline headline-alpha">Eingabe von Talks offen bis am {{ site.enddate | date(site.date_format) }}</h3>
                     {% else %}
                         <h1 class="headline headline-alpha">
                             {% if site.show_submission_count %}
@@ -15,7 +15,7 @@
                                 Call for Papers ist beendet!
                             {% endif %}
                         </h1>
-                        <h3 class="headline headline-alpha">Eingabe von Talks war offen bis {{ site.enddate }}</h3>
+                        <h3 class="headline headline-alpha">Eingabe von Talks war offen bis am{{ site.enddate }}</h3>
                     {% endif %}
                     <p>
                         {% if cfp_open %}<a class="btn-opencfp btn-opencfp-medium btn-opencfp--outlined" href="{{ url('user_new') }}">Registrieren</a>{% endif %}
