@@ -30,11 +30,11 @@ class TalkController extends BaseController
         $form = new TalkForm($request_data, $this->service('purifier'), $options);
         return $form;
     }
-    
+
     private function getTalkCategories()
     {
         $categories = $this->app->config('talk.categories');
-        
+
         if ($categories === null) {
             $categories = [
                 'api' => 'APIs (REST, SOAP, etc.)',
@@ -51,7 +51,7 @@ class TalkController extends BaseController
                 'other' => 'Other',
             ];
         }
-        
+
         return $categories;
     }
 
