@@ -55,7 +55,7 @@
     <div class="form-group">
         <label for="form-user-bio" class="col-sm-2 control-label">Speaker Bio</label>
         <div class="col-sm-10">
-            <textarea id="form-user-bio" name="speaker_bio" class="form-control" placeholder="Zustäzliche Informationen über dich" rows="5">{{ speaker_bio | default('') }}</textarea>
+            <textarea id="form-user-bio" name="speaker_bio" class="form-control" placeholder="Speaker Bio (Vortragserfahrung etc.)" rows="5">{{ speaker_bio | default('') }}</textarea>
             <p class="help-block">Speaker Bio untersützt <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a>.</p>
         </div>
     </div>
@@ -70,7 +70,7 @@
     <div class="form-group">
         <label for="form-user-notes" class="col-sm-2 control-label">Zusätzliche Informationen</label>
         <div class="col-sm-10">
-            <textarea id="form-user-notes" name="speaker_info" class="form-control" placeholder="Other information you feel the organizers should be aware of" rows="5">{{ speaker_info | default('') }}</textarea>
+            <textarea id="form-user-notes" name="speaker_info" class="form-control" placeholder="Zusätzliche Informationen die du den Organisatoren mitteilen möchtest" rows="5">{{ speaker_info | default('') }}</textarea>
             <p class="help-block">Notizen können in <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">markdown</a> verfasst werden.</p>
         </div>
     </div>
