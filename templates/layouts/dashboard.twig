@@ -45,8 +45,8 @@
                 <ul class="nav nav-tabs" role="tablist">
                     {% if user is defined and user is not empty %}
                         <li{% if path('dashboard') == current_page %} class="active"{% endif %}><a href="{{ url('dashboard') }}">Dashboard</a></li>
-                        <li{% if path('password_edit') == current_page %} class="active"{% endif %}><a href="{{ url('password_edit') }}">Change Password</a></li>
-                        <li{% if path('user_edit', { id: user.id }) == current_page %} class="active"{% endif %}><a href="{{ url('user_edit', { id: user.id }) }}">Edit Profile</a></li>
+                        <li{% if path('password_edit') == current_page %} class="active"{% endif %}><a href="{{ url('password_edit') }}">Passwort ändern</a></li>
+                        <li{% if path('user_edit', { id: user.id }) == current_page %} class="active"{% endif %}><a href="{{ url('user_edit', { id: user.id }) }}">Profil bearbeiten</a></li>
                     {% endif %}
                 </ul>
                 <div class="module">
