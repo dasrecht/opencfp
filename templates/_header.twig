@@ -6,20 +6,20 @@
                 </div>
                 <div class="col-md-9">
                     {% if cfp_open %}
-                        <h1 class="headline headline-alpha">Call For Papers ist offen!</h1>
-                        <h3 class="headline headline-alpha">Eingabe von Talks offen bis am {{ site.enddate | date(site.date_format) }}</h3>
+                        <h1 class="headline headline-alpha">Call For Participation</h1>
+                        <h3 class="headline headline-alpha">Eingabe von Vorträgen und Workshops möglich bis am {{ site.enddate | date(site.date_format) }}</h3>
                     {% else %}
                         <h1 class="headline headline-alpha">
                             {% if site.show_submission_count %}
-                                Call for Papers ended with {{ number_of_talks }} Submissions!
+                                Call For Participation ended with {{ number_of_talks }} Submissions!
                             {% else %}
-                                Call for Papers ist beendet!
+                                Call For Participation ist beendet!
                             {% endif %}
                         </h1>
-                        <h3 class="headline headline-alpha">Eingabe von Talks war offen bis am{{ site.enddate }}</h3>
+                        <h3 class="headline headline-alpha">Eingabe von Vorträgen und Workshops war offen bis am{{ site.enddate }}</h3>
                     {% endif %}
                     <p>
-                        {% if cfp_open %}<a class="btn-opencfp btn-opencfp-medium btn-opencfp--outlined" href="{{ url('user_new') }}">Registrieren</a>{% endif %}
+                        {% if cfp_open %}<a class="btn-opencfp btn-opencfp-medium btn-opencfp--outlined" href="{{ url('user_new') }}">Vortrag oder Workshop vorschlagen</a>{% endif %}
                     </p>
                 </div>
             </div>
@@ -29,12 +29,12 @@
 <section class="section section--light">
     <div class="container">
         <div class="row">
-            {% if site.event_location is defined and site.date_format is defined %}
-            <div class="col-md-8"><h3 class="headline headline--alpha">
-                {{ site.title }} ist am {{ site.arrival|date(site.date_format, false) }} im Karl der Grosse, Zürich</h3></div>
-            {%  else %}
-                <div class="col-md-8"><h3 class="headline headline--alpha">For More Information About The Conference</h3></div>
-            {% endif %}
+            <div class="col-md-8">
+              <h3 class="headline headline--alpha">
+                Winterkongress der Digitalen Gesellschaft<br>
+                am {{ site.arrival|date(site.date_format, false) }} im Karl der Grosse, Zürich
+              </h3>
+                </div>
             <div class="col-md-4 text-right"><a href="{{ site.eventurl }}" class="btn-opencfp btn-opencfp-medium btn-opencfp--light">Webseite</a></div>
         </div>
     </div>
