@@ -46,12 +46,12 @@
             <input id="form-user-twitter" type="text" name="twitter" class="form-control" placeholder="@twitter" value="{{ twitter | default('') }}">
         </div>
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label for="form-user-url" class="col-sm-2 control-label">joind.in</label>
         <div class="col-sm-10">
             <input id="form-user-url" type="text" name="url" class="form-control" placeholder="https://joind.in/user/" value="{{ url | default('') }}">
         </div>
-    </div>
+    </div> -->
     <div class="form-group">
         <label for="form-user-bio" class="col-sm-2 control-label">Speaker Bio</label>
         <div class="col-sm-10">
@@ -100,7 +100,7 @@
         <label for="form-user-photo" class="col-sm-2 control-label">Photo</label>
         <div class="col-sm-10">
             <input type="file" id="form-user-photo" name="speaker_photo" class="form-control" placeholder="Photo at least 300px wide by 300px high" accept="image/jpg, image/jpeg, image/png">
-            <p class="help-block">Das Foto sollte quadratisch sein, mindestens mit einer Mindestgrösse von 300x300 Pixel. JPG und PNG sind die akzeptierten Dateiformat.</p>
+            <p class="help-block">Das Foto sollte quadratisch sein, mit einer Mindestgrösse von 300x300 Pixel. Als Dateiformate werden JPG und PNG akzeptiert.</p>
             {% if preview_photo is defined and preview_photo is not empty %}
                 <img src="{{ preview_photo }}" class="profile-photo">
             {% endif %}
@@ -114,7 +114,7 @@
                 <label for="form-agree-coc">
                     <input id="form-agree-coc" name="agree_coc" type="checkbox" value="agreed" ><strong>Ich bin mit folgender Etikette einverstanden und werde diese einhalten.</strong><br>
                     <p>
-                    Etikette, guter Umgang: Ein respektvoller und zuvorkommender Umgang unter allen Teilnehmenden wird vorausgesetzt. Falls sich eine Uneinigkeit nicht direkt lösen lässt, hilft das Organisationsteam weiter. Dieses wird nötigenfalls von seinem Hausrecht gebraucht macht.
+                    Ein respektvoller und zuvorkommender Umgang unter allen Teilnehmenden wird vorausgesetzt. Falls sich eine Uneinigkeit nicht direkt lösen lässt, hilft das Organisationsteam weiter. Dieses wird nötigenfalls von seinem Hausrecht gebrauch machen.
                     </p>
                 </label>
             </div>
